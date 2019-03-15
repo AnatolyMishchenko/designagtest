@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "3707b5db-aae2-488d-927a-c06d9e6c8774",
+		"name": "Designag",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Articles index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://designag/api/articles",
+					"protocol": "http",
+					"host": [
+						"designag"
+					],
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Article create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://designag/api/articles?title=fadfadfa&text=222sfgsfgsf sdfgfag asf asfgsffssf sf&category_id=2&revision_id=1",
+					"protocol": "http",
+					"host": [
+						"designag"
+					],
+					"path": [
+						"api",
+						"articles"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "fadfadfa"
+						},
+						{
+							"key": "text",
+							"value": "222sfgsfgsf sdfgfag asf asfgsffssf sf"
+						},
+						{
+							"key": "category_id",
+							"value": "2"
+						},
+						{
+							"key": "revision_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Article show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://designag/api/articles/1",
+					"protocol": "http",
+					"host": [
+						"designag"
+					],
+					"path": [
+						"api",
+						"articles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Article delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
