@@ -1,0 +1,306 @@
+{
+	"info": {
+		"_postman_id": "91c92ee4-6bf1-433d-b00d-19db3202cb58",
+		"name": "sharp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "History",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImE1ZTY4Y2NkYzRhMDY3NWE5ZDA1NzI0MzAyZGVmYjI5ZmY0ODMzYzgzNTZlNzMwZDI5Nzk0NzM4MmJiNDdjZTlmZjhmNjhjNzkyODI0YjcwIn0.eyJhdWQiOiIzIiwianRpIjoiYTVlNjhjY2RjNGEwNjc1YTlkMDU3MjQzMDJkZWZiMjlmZjQ4MzNjODM1NmU3MzBkMjk3OTQ3MzgyYmI0N2NlOWZmOGY2OGM3OTI4MjRiNzAiLCJpYXQiOjE1NDQ2MjExMzksIm5iZiI6MTU0NDYyMTEzOSwiZXhwIjoxNTc2MTU3MTM5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ptHfxpZ_Zad4UO4ZKb56Gocme10JL7SnRk1UmGo9WOIRCOqbtIUC8SjV5UqmW7lpiJGzHiIKtORlSHbxcDbQ6b6v22jDqxp3DWlLZ8bj5EteCVpZ94UFlNJRvJIPmAidZidzW2qqCeiepiJ0FOGueT1XUQF53ZLTnX4fMClNf9ODAzVDOK6H_boJiZsCT9YElhC_9BYfnN-OTVs2wQQfijy9FWsN5LqH8ch0O4GLo9BxyP2psTTYs-oeU9C9o-PdzhtMTWyJ0pY42o2nkErE-46BafNHPYei6kL60NvnE-Jr8wZv_-Jyj8dv3ZLn-wOb-Vh0IqBQVkwIu_N7qTQ-R0oVQEZw38aCj8uJLYVHHxJbvbRR1dTkd4NrQEgKfgFLh82kIq0c_p25VDTS_TDAaRy-97WeEi_OpH22wluNKCdS4hRRclEkSYebx44rzp7uW3CH23OW4Q6XreS0uBfEBrG48UwEdVTf39CA2vVjMITh-19L-XNivXojYe5culx_8-qWJMaKdklkess-OS8iP4DHvONtdK732EqY0SWIfT5pOMQZ9X5mFa-_pSKpQW9OZx3Q5Yv_IOcKhohdDdj1VR_ZlcKCs02plSbvgxKAE4qsJt-7BRvh0_I4Pt4knH7iDyavT2PGK6QTfzf6DTBJj_vOL0tu2NiCHk1nQvaBOIU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://sharp/api/post",
+							"protocol": "http",
+							"host": [
+								"sharp"
+							],
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://sharp/api/post/update/2?name=admin&how=200",
+							"protocol": "http",
+							"host": [
+								"sharp"
+							],
+							"path": [
+								"api",
+								"post",
+								"update",
+								"2"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "admin"
+								},
+								{
+									"key": "how",
+									"value": "200"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://sharp/api/auth/register?email=gggg@gg.ru&password=111222&password_confirmation=111222&name=vasya",
+							"protocol": "http",
+							"host": [
+								"sharp"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "gggg@gg.ru"
+								},
+								{
+									"key": "password",
+									"value": "111222"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "111222"
+								},
+								{
+									"key": "name",
+									"value": "vasya"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://sharp/api/auth/login?email=admin@test.com&password=admin",
+							"protocol": "http",
+							"host": [
+								"sharp"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "admin@test.com"
+								},
+								{
+									"key": "password",
+									"value": "admin"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://sharp/api/users/update/3?email=vasya@test.com&balance=20000&name=vasya",
+							"protocol": "http",
+							"host": [
+								"sharp"
+							],
+							"path": [
+								"api",
+								"users",
+								"update",
+								"3"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "vasya@test.com"
+								},
+								{
+									"key": "balance",
+									"value": "20000"
+								},
+								{
+									"key": "name",
+									"value": "vasya"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "options",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://sharp/api/options",
+							"protocol": "http",
+							"host": [
+								"sharp"
+							],
+							"path": [
+								"api",
+								"options"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PW",
+			"item": [
+				{
+					"name": "give",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImE1ZTY4Y2NkYzRhMDY3NWE5ZDA1NzI0MzAyZGVmYjI5ZmY0ODMzYzgzNTZlNzMwZDI5Nzk0NzM4MmJiNDdjZTlmZjhmNjhjNzkyODI0YjcwIn0.eyJhdWQiOiIzIiwianRpIjoiYTVlNjhjY2RjNGEwNjc1YTlkMDU3MjQzMDJkZWZiMjlmZjQ4MzNjODM1NmU3MzBkMjk3OTQ3MzgyYmI0N2NlOWZmOGY2OGM3OTI4MjRiNzAiLCJpYXQiOjE1NDQ2MjExMzksIm5iZiI6MTU0NDYyMTEzOSwiZXhwIjoxNTc2MTU3MTM5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ptHfxpZ_Zad4UO4ZKb56Gocme10JL7SnRk1UmGo9WOIRCOqbtIUC8SjV5UqmW7lpiJGzHiIKtORlSHbxcDbQ6b6v22jDqxp3DWlLZ8bj5EteCVpZ94UFlNJRvJIPmAidZidzW2qqCeiepiJ0FOGueT1XUQF53ZLTnX4fMClNf9ODAzVDOK6H_boJiZsCT9YElhC_9BYfnN-OTVs2wQQfijy9FWsN5LqH8ch0O4GLo9BxyP2psTTYs-oeU9C9o-PdzhtMTWyJ0pY42o2nkErE-46BafNHPYei6kL60NvnE-Jr8wZv_-Jyj8dv3ZLn-wOb-Vh0IqBQVkwIu_N7qTQ-R0oVQEZw38aCj8uJLYVHHxJbvbRR1dTkd4NrQEgKfgFLh82kIq0c_p25VDTS_TDAaRy-97WeEi_OpH22wluNKCdS4hRRclEkSYebx44rzp7uW3CH23OW4Q6XreS0uBfEBrG48UwEdVTf39CA2vVjMITh-19L-XNivXojYe5culx_8-qWJMaKdklkess-OS8iP4DHvONtdK732EqY0SWIfT5pOMQZ9X5mFa-_pSKpQW9OZx3Q5Yv_IOcKhohdDdj1VR_ZlcKCs02plSbvgxKAE4qsJt-7BRvh0_I4Pt4knH7iDyavT2PGK6QTfzf6DTBJj_vOL0tu2NiCHk1nQvaBOIU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://sharp/api/givepw?how=100&name=admin",
+							"protocol": "http",
+							"host": [
+								"sharp"
+							],
+							"path": [
+								"api",
+								"givepw"
+							],
+							"query": [
+								{
+									"key": "how",
+									"value": "100"
+								},
+								{
+									"key": "name",
+									"value": "admin"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImE1ZTY4Y2NkYzRhMDY3NWE5ZDA1NzI0MzAyZGVmYjI5ZmY0ODMzYzgzNTZlNzMwZDI5Nzk0NzM4MmJiNDdjZTlmZjhmNjhjNzkyODI0YjcwIn0.eyJhdWQiOiIzIiwianRpIjoiYTVlNjhjY2RjNGEwNjc1YTlkMDU3MjQzMDJkZWZiMjlmZjQ4MzNjODM1NmU3MzBkMjk3OTQ3MzgyYmI0N2NlOWZmOGY2OGM3OTI4MjRiNzAiLCJpYXQiOjE1NDQ2MjExMzksIm5iZiI6MTU0NDYyMTEzOSwiZXhwIjoxNTc2MTU3MTM5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ptHfxpZ_Zad4UO4ZKb56Gocme10JL7SnRk1UmGo9WOIRCOqbtIUC8SjV5UqmW7lpiJGzHiIKtORlSHbxcDbQ6b6v22jDqxp3DWlLZ8bj5EteCVpZ94UFlNJRvJIPmAidZidzW2qqCeiepiJ0FOGueT1XUQF53ZLTnX4fMClNf9ODAzVDOK6H_boJiZsCT9YElhC_9BYfnN-OTVs2wQQfijy9FWsN5LqH8ch0O4GLo9BxyP2psTTYs-oeU9C9o-PdzhtMTWyJ0pY42o2nkErE-46BafNHPYei6kL60NvnE-Jr8wZv_-Jyj8dv3ZLn-wOb-Vh0IqBQVkwIu_N7qTQ-R0oVQEZw38aCj8uJLYVHHxJbvbRR1dTkd4NrQEgKfgFLh82kIq0c_p25VDTS_TDAaRy-97WeEi_OpH22wluNKCdS4hRRclEkSYebx44rzp7uW3CH23OW4Q6XreS0uBfEBrG48UwEdVTf39CA2vVjMITh-19L-XNivXojYe5culx_8-qWJMaKdklkess-OS8iP4DHvONtdK732EqY0SWIfT5pOMQZ9X5mFa-_pSKpQW9OZx3Q5Yv_IOcKhohdDdj1VR_ZlcKCs02plSbvgxKAE4qsJt-7BRvh0_I4Pt4knH7iDyavT2PGK6QTfzf6DTBJj_vOL0tu2NiCHk1nQvaBOIU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://sharp/api/transactions",
+							"protocol": "http",
+							"host": [
+								"sharp"
+							],
+							"path": [
+								"api",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

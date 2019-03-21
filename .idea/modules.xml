@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/designag.iml" filepath="$PROJECT_DIR$/.idea/designag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sharp.iml" filepath="$PROJECT_DIR$/.idea/sharp.iml" />
     </modules>
   </component>
 </project>
