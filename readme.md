@@ -1,4 +1,4 @@
-1. Unpack archive in your foldrer
+1. Unpack archive in your foldrer or clone
 2. Create database and configure .env and config/database.php
 3. Install composer and run composer update
 4. Run migrate and seed
