@@ -26,7 +26,7 @@
     "dependencies": {
         "@websanova/vue-auth": "^2.21.14-beta",
         "es6-promise": "^4.2.5",
-        "moment": "^2.23.0",
+        "moment": "^2.29.2",
         "vue-axios": "^2.1.4",
         "vue-router": "^3.0.2",
         "vue-table-component": "^1.9.2",
